@@ -1,0 +1,113 @@
+.cts-content {
+
+    font-family: "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
+}
+
+
+/* for HEADs with multiple tags like Pindar's Odes */
+.cts-content .multitaghead {
+	text-decoration: underline;
+}
+
+
+.cts-content div.note {
+    font-size: x-small;
+    padding: 3px 8px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    border: 1px solid black;
+}
+
+
+.cts-content .title {
+    font-style: italic;
+}
+
+/* NAMED-ENTITY STUFF */
+
+.cts-content .list_element {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.cts-content .linenumber {
+  font-size: small;
+}
+
+.cts-content div.embeddedtext {
+  padding: 5px;
+}
+
+/* Holinshed styles */
+
+.cts-content span.note.margin.old
+{
+	float: right;
+	width: 20%;
+	text-align: left;
+	padding: 1em;
+	color: #003;
+	border: solid black 0px;
+	border-width: 0 1px 0px 0;
+	margin: -1px 0.5em 0.2em -1px;
+	clear: both;
+	background-color: #FFC;
+	font-size: x-small;
+	line-height: 15px;
+}
+
+.cts-content span.note.margin
+{
+	float: right;
+	clear: both;
+	width: 20%;
+	text-align: left;
+	padding: 1em;
+	font-size: x-small;
+}
+
+.cts-content span.note.margin.rubric
+{
+	color: red;
+}
+
+.cts-content h1.div.head
+{
+	font-size: small;
+	font-weight: bold;
+}
+
+.cts-content h1.list.head
+{
+	font-size: x-small;
+	font-weight: bold;
+}
+
+/* Marlowe */
+.cts-content span.lem { color: green; }
+
+.cts-content div.textual_note ul, div.textual_note li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+         }
+
+.cts-content div.textual_note span.witlist
+{
+	font-variant: small-caps;
+	font-size: x-small;
+}
+
+.cts-content span.text_note {display: none;}
+
+.cts-content span.app_inline a:hover span {display: block;}
+
+
+.cts-content div.la, .cts-content div.text_container span.la,
+.cts-content div.en, .cts-content div.text_container span.en,
+.cts-content div.non, .cts-content div.text_container span.non,
+.cts-content div.ang, .cts-content div.text_container span.ang,
+.cts-content .serif {
+    font-family: Georgia,Times,serif;
+}
+

@@ -1,0 +1,64 @@
+Perseids = {
+   'syllabus': [
+                {   'id': 'week4',
+                    'label': 'Week 4',
+                    'lectures': [ 
+                       { 'label': "Lecture 1",
+                         'description': ["Apollo and Artemis"]
+                       }
+                    ],
+                    'assignments': [
+                        { 
+                             'label': "Homeric Hymns, <i>Homeric Hymn to Apollo</i>",
+                             'display_items': [
+                                {'uri' : "http://data.perseus.org/texts/urn:cts:greekLit:tlg0013.tlg003.perseus-eng1",
+                                 'ctype' : 'link',
+                                 'label' : 'Read in Perseus'
+                                }
+                              ],
+                             'level': 0,
+                             'group': 1
+                         },
+                         {
+                             'label': "Ovid, <i>Metamorphoses</i> 1.253-1.415",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006:1.253-1.415',
+                                 'http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.333-1.533'],
+                             'display_items': [
+                                {'uri' :  "urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.253-1.348",
+                                 'ctype': "cts-text"}
+                              ],
+                             'level': 1,
+                             'group': 2
+                         },
+                         {
+                             'label': "Krater, <i>Malibu 85.AE.101",
+                             'annotation_targets': ["http://data.perseus.org/artifacts/vase/Malibu+85.AE.101"],
+                             'display_items': [
+                                {'uri' : "http://data.perseus.org/artifacts/vase/Malibu+85.AE.101",
+                                 'ctype' : 'artifact'
+                                }
+                              ],
+                             'level': 2,
+                             'group': 2
+                         },
+                         {
+                             'label': "Euripides, <i>Iphigenia in Tauris</i> 1-41",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0006.tlg013:1-41',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0006.tlg013.perseus-eng1:1'],
+                             'display_items': [
+                                { 'uri': "urn:cts:greekLit:tlg0006.tlg013.perseus-eng1:1",
+                                  'ctype': 'cts-text'
+                                }
+                             ],
+                             'level': 3,
+                             'group': 2
+                         }
+                    ]
+                }
+            ]
+    };
+
+
+

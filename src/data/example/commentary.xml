@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:oa="http://www.w3.org/ns/oa#"
+  xmlns:cnt="http://www.w3.org/2008/content#"
+  xmlns:dctypes="http://purl.org/dc/dcmitype/"
+  xmlns:perseus="http://data.perseus.org/"
+  xmlns:perseids="http://data.perseids.org/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <oa:Annotation 
+    rdf:about="perseus:collections/urn:cite:perseids:commentaries.1.1">
+    <oa:hasTarget 
+      rdf:resource="perseus:citations/urn:cts:latinLit:phi0959.phi006:1.253-1.415"/>
+    <oa:hasTarget 
+      rdf:resource="perseus:citations/urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.253-1.348"/>
+    <oa:hasBody>
+      <cnt:ContentAsText rdf:about="urn:cite:perseids:commentaries.1.1/text">
+        <rdf:type rdf:resource="dctypes:Text"/>
+        <dc:format>text/plain</dc:format>
+        <cnt:chars>A student commentary on Ovid Met. 1.253-1.415</cnt:chars>
+      </cnt:ContentAsText>
+    </oa:hasBody>
+    <oa:annotatedBy>
+      <foaf:Person rdf:about="perseids:community/user7"/>
+    </oa:annotatedBy>
+    <oa:annotatedAt>2013-09-15T09:08:07</oa:annotatedAt>
+    <oa:motivatedBy rdf:resource="oa:commenting"/>
+    <rdfs:label>Test Label</rdfs:label>
+  </oa:Annotation>
+</rdf:RDF>

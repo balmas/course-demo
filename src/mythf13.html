@@ -53,7 +53,7 @@
     	/* Text Things */
     	var textElementClass = "cts-text";
     	var pathToXSLT = "ctskit/xsl/course-display.xsl";
-    	var urlOfCTS = "http://sosol.perseus.tufts.edu/exist/rest/db/xq/CTS.xq?request=GetPassage&inv=perseids&urn=";
+    	var urlOfCTS = "http://perseids.org/citations/";
 
 		/* Image Things */
     	var imgElementClass = "cite-img";
@@ -62,7 +62,7 @@
     	var pathToImgXSLT = "ctskit/xsl/gip.xsl";
 
 		/* Collection Things */
-		var urlOfCite = "http://sosol.perseus.tufts.edu/collections/api?req=GetObject&urn=";
+		var urlOfCite = "http://perseids.org/collections/";
     	var collectionElementClass = "cite-collection";
     	var pathToCiteXSLT = "ctskit/xsl/berti/lci.xsl";
     	
@@ -70,6 +70,8 @@
 		var pathToSubrefXSLT = "ctskit/xsl/extract_text.xsl";
 		
 		var documentStartCallback = onDocumentStart;
+		
+		var annotationEditorUrl = "http://sosol.perseids.org/sosol/cite_publications/create_from_linked_urn/Commentary/urn:cite:perseus:mythcomm";
 
     </script>
     
@@ -79,11 +81,11 @@
 <body>
 	<header>
 		<h2>Greek and Roman Mythology</h2>
+		<hr/>
 		<!-- todo move this into the JSON -->
-		<div class="permalink"><a href="">Permalink</a> to this Syllabus page</a></div>
 		<table id="course_info">
 			<tr>
-				<th>Meets:</th><td>Tu-Thurs 10h30-11h45, Crane room</td>
+				<th>Meets:</th><td>Mon-Wed 10h30-11h45, Crane room</td>
 			</tr>
 			<tr>
 				<th>Instructor:</th><td>Dr. Marie-Claire Beaulieu</td>
@@ -95,9 +97,21 @@
 				<th>Office Hours:</th><td>Tuesday and Thursday 3h00-5h30 and by appointment</td>
 			</tr>
 		</table>
-		<p class="label">Loading Label...</p>
+		<hr/>
 	</header>
-	<div class="syllabus">
+	<div id="index" class="waiting">
+		Loading Syllabus...
+	</div>
+	<div id="syllabus-header">
+		<div class="nav">
+			<div class="permalink"><a href="">Permalink For Module</a></div>
+			<div class="indexlink">Full Course Syllabus</div>
+		</div>
+		<div id="syllabusitem">
+			<p class="label">Loading Label...</p>
+		</div>
+	</div>
+	<div id="syllabus">
 		<div class="lectures">
 			<div class="label">Lectures</div>
 			<!-- POPULATE WITH LECTURES -->
@@ -116,9 +130,9 @@
 			<div class="group2 assignment-group" >
 				<div class="label">Optional Readings and Analyses</div>
 				<ol>
-					<li><a href="#group2_level1">Easy<a/></li>
-					<li><a href="#group2_level2">Medium<a/></li>
-					<li><a href="#group2_level3">Difficult<a/></li>
+					<li><a href="#group2_level1">Easy</a></li>
+					<li><a href="#group2_level2">Medium</a></li>
+					<li><a href="#group2_level3">Difficult</a></li>
 				</ol>
 				<div class="level1 assignment-level" id="group2_level1">
 					<div class="label">[ Easy ]</div>
@@ -137,6 +151,7 @@
 		
 	</div>
 	<footer>
+		<hr/>
 		<p>This project received support from Tufts University and the Mellon Foundation.</p>
 		<p><span class="rights">Software licensed under the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPL 3.0 License</a>. See also <a href="#ui-id-8">Credits</a>.</span></p>
 		<p><span class="rights">Images, text and data licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-ShareAlike 3.0 United States License.</a></span></p>		

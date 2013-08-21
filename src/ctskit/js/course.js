@@ -63,7 +63,7 @@ function loadSyllabus(a_index_item) {
         var parent = $('#syllabus .assignments .group' + group + ' .level' + level + ' .content'); 
         if (assignment.annotation_targets != null && assignment.annotation_targets.length > 0) {
             var aUrl = annotationEditorUrl;
-            parent.append('<form method="GET" action="' + aUrl + '"></form>');
+            parent.append('<form target="_blank" method="GET" action="' + aUrl + '"></form>');
             //$('form',parent).append('<input type="hidden" name="type" value="Commentary"/>');                 
             for (var k=0; k < assignment.annotation_targets.length; k++) {
                 $('form',parent).append('<input type="hidden" name="init_value[]" value="' + assignment.annotation_targets[k] + '"/>');
@@ -81,6 +81,15 @@ function loadSyllabus(a_index_item) {
                 parent.append('<iframe src="' + item.uri + '"></iframe>')
             }
         }
+        $(".assignment-group").each(
+            function() {
+                if ($('.content',this).children().length > 0) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            }
+        );
         $('#syllabus').show();
     }
 }

@@ -10,15 +10,15 @@ version = "0.1.0"
 
 task web (type: Copy) {
     from  'src'
-    into "${buildDir.path}/berti_demo"
+    into "${buildDir.path}/syllabi"
     description "Assembles directory usable on a web server in ${buildDir.path}/html-ctskit"
 }
 
 
 
 task zipKit (type: Zip, dependsOn: web) {
-    from(file("${buildDir.path}/berti_demo"))
-    into("berti_demo")
+    from(file("${buildDir.path}/syllabi"))
+    into("syllabi")
     description "Builds a zip file of web directory"
 }
 

@@ -1,14 +1,33 @@
 Perseids = {
    'syllabus': [
+                {   'id': 'week1',
+                    'label': 'Week 1 Sept 4: Introduction',
+                    'lectures': [ 
+                       { 'label': "Lecture 1",
+                         'description': ["Introduction",
+                                         "Myth vs Religion",
+                                         "Interpreting Myth",
+                                         "Sources of Myth"]
+                       }
+                    ],
+                    'assignments': [
+                        { 
+                             'label': "Chapters 1 and 2",
+                             'display_items': [],
+                             'level': 0,
+                             'group': 1
+                         }
+                    ]
+                },
                 {   'id': 'week2',
-                    'label': 'Week 2 Sept 9-11',
+                    'label': 'Week 2 Sept 9-11: Cosmogony',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Greek Cosmogony",
                                          "Near Eastern parallels(Genesis, etc)",
                                          "Greek organization of the world: sky, earth, Underworld, Oceanus"]
                        },
-                       { 'label': "Lecture 2",
+                       { 'label': "Lecture 2: The Study of Myth",
                          'description': ["Source criticism: (methods, Perseids platform: B. Almas)",
                                          "Example of source criticism with the 3 additional readings for the week: in class"]
                        }
@@ -66,7 +85,7 @@ Perseids = {
                     ]
                 },
                 {   'id': 'week3',
-                    'label': 'Week 3 Sept 16-18',
+                    'label': 'Week 3 Sept 16-18: Succession Myths',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Prometheus",
@@ -139,7 +158,7 @@ Perseids = {
                      ]
                 },
                 {   'id': 'week4',
-                    'label': 'Week 4 Sept 23-25',
+                    'label': 'Week 4 Sept 23-25: Apollo and Artemis',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Apollo and Artemis"]

@@ -36,7 +36,7 @@ body {
     font-weight: bold;
 }
 
-.indexitem, .indexlink {
+.indexitem.published, .indexlink {
     text-decoration: underline;
     color: blue;
 }
@@ -141,4 +141,9 @@ footer {
 table#course_info tr th {
     padding-right: 1em;
     font-style: italic;
+}
+
+.inlinespeaker {
+    font-style:italic;
+    display: block;
 }

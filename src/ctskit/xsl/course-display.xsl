@@ -154,6 +154,12 @@
 				<xsl:attribute name="class">cts-content alpheios-enabled-text</xsl:attribute>
 			</xsl:if>-->			
 			<xsl:apply-templates/>
+	  <!-- The space is necessary here so that we don't run the risk of
+	outputting an empty DIV tag, which some browsers may interpret
+	poorly, if there are no footnotes -->
+	  <div class="footnotes en"><xsl:text> </xsl:text>
+	    <xsl:call-template name="footnotes" />
+	  </div>
 	</xsl:template>
 	<xsl:template match="cts:CTSError">
 		<h1>CTS Error</h1>
@@ -1129,7 +1135,11 @@ AAA<xsl:apply-templates />B
     </xsl:if>
   </xsl:template>
 
-  <xsl:template match="tei:div1">
+  <xsl:template match="tei:div|tei:div1">
+    <xsl:if test="@n!=1">
+      [<span class="english"><xsl:value-of select="@n"/></span>]
+      <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:choose>
 	<xsl:when test="@lang">
 	  <xsl:call-template name="language-filter">
@@ -1265,6 +1275,33 @@ AAA<xsl:apply-templates />B
 	</xsl:if>
       <xsl:apply-templates/>
     </td>
+  </xsl:template>
+  
+  <xsl:template match="tei:said">
+    <!-- this is a hack - it should look up the display name from the element with the referenced id -->
+    <!-- it also should group multiple said blocks so as not to repeat the speaker name -->
+    <xsl:variable name="previous">
+      <xsl:choose>
+        <xsl:when test="preceding-sibling::tei:said">
+          <xsl:value-of select="(preceding-sibling::tei:said)[1]/@who"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="(parent::*/preceding-sibling::*)[1]/tei:said[last()]/@who"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="$previous != @who">
+      <div class="speaker">(spoken by <xsl:value-of select="substring-after(@who,'#')"/>)</div>
+        <xsl:apply-templates></xsl:apply-templates>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates/>
+      </xsl:otherwise>
+    </xsl:choose>
+    <p>
+    
+    </p>
   </xsl:template>
 
 	<xsl:template name="language-filter">

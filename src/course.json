@@ -2,6 +2,7 @@ Perseids = {
    'syllabus': [
                 {   'id': 'week1',
                     'label': 'Week 1 Sept 4: Introduction',
+                    'status': 'published',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Introduction",
@@ -21,6 +22,7 @@ Perseids = {
                 },
                 {   'id': 'week2',
                     'label': 'Week 2 Sept 9-11: Cosmogony',
+                    'status': 'published',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Greek Cosmogony",
@@ -58,11 +60,11 @@ Perseids = {
                              'group': 2
                          },
                          {    
-                             'label': "Aristophanes, <i>Birds</i> 688-702",
-                             'annotation_targets': [ "http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006:688-702",
-                                                     "http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006.perseus-eng1:688-702"],
+                             'label': "Aristophanes, <i>Birds</i> 685-707",
+                             'annotation_targets': [ "http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006:685-707",
+                                                     "http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006.perseus-eng1:685-707"],
                              'display_items': [
-                                {'uri' : "urn:cts:greekLit:tlg0019.tlg006.perseus-eng1:688-702",
+                                {'uri' : "urn:cts:greekLit:tlg0019.tlg006.perseus-eng1:685-707",
                                  'ctype' : "cts-text"
                                 }
                               ],
@@ -70,12 +72,12 @@ Perseids = {
                              'group': 2
                          },
                          {
-                             'label': "Plato, <i>Timaeus</i> 40d",
+                             'label': "Plato, <i>Timaeus</i> 40d-41d",
                              'annotation_targets': 
-                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0059.tlg031:40d',
-                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0059.tlg031.perseus-eng1:40d'],
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0059.tlg031:40d-41d',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0059.tlg031.perseus-eng1:40d-41d'],
                              'display_items': [
-                                { 'uri': "urn:cts:greekLit:tlg0059.tlg031.perseus-eng1:40d",
+                                { 'uri': "urn:cts:greekLit:tlg0059.tlg031.perseus-eng1:40d-41d",
                                   'ctype': 'cts-text'
                                 }
                              ],
@@ -86,6 +88,7 @@ Perseids = {
                 },
                 {   'id': 'week3',
                     'label': 'Week 3 Sept 16-18: Succession Myths',
+                    'status': 'published',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Prometheus",
@@ -159,6 +162,7 @@ Perseids = {
                 },
                 {   'id': 'week4',
                     'label': 'Week 4 Sept 23-25: Apollo and Artemis',
+                    'status': 'published',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Apollo and Artemis"]
@@ -218,6 +222,89 @@ Perseids = {
                              'level': 3,
                              'group': 2
                          }
+                    ]
+                },
+                {  'id': 'week5',
+                    'label': 'Week 5 Sept. 30-Oct. 2: Dionysus',
+                    'status': 'pending',
+                    'lectures': [ 
+                       { 'label': "Lecture 1",
+                         'description': ["Dionysus"]
+                       }
+                    ],
+                    'assignments': [
+                    ]
+                },
+                {  'id': 'week6',
+                    'label': 'Week 6 Oct. 7-9: Athena and Ares',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                 {  'id': 'week7',
+                    'label': 'Week 7 Oct. 14-16: Journeys of the Hero',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                 {  'id': 'week8',
+                    'label': 'Week 8 Oct. 21-23: the Underworld',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                 {  'id': 'week9',
+                    'label': 'Week 9 Oct. 28-30: Pastoral divinities',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                {  'id': 'week10',
+                    'label': 'Week 10 Nov. 4-6: The Sea and the Ocean',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                 {  'id': 'week11',
+                    'label': 'Week 11 Nov. 11-13: Marriage',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                 {  'id': 'week12',
+                    'label': 'Week 12 Nov. 18-20: The Trojan War',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                     {  'id': 'week13',
+                    'label': 'Week 13 Nov. 25-27: Oedipus',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
+                    ]
+                },
+                  {  'id': 'week14',
+                    'label': 'Week 14 Dec. 2-4: TBA',
+                    'status': 'pending',
+                    'lectures': [ 
+                    ],
+                    'assignments': [
                     ]
                 }
             ]

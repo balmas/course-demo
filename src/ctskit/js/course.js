@@ -27,7 +27,7 @@ function loadIndex() {
     $('#index').show();
     $('#index').html('<ul/>');
     for (var i=0; i<Perseids.syllabus.length; i++) {
-        $('#index ul').append('<li class="indexitem" data-module="' + i + '">' +  
+        $('#index ul').append('<li class="indexitem ' + Perseids.syllabus[i].status +'" data-module="' + i + '">' +  
             Perseids.syllabus[i].label + '</li>');
     }
     $('#index .indexitem').click(indexItemClick);

@@ -39,7 +39,7 @@ Perseids = {
                         { 
                              'label': "Hesiod, <i>Theogony</i>",
                              'display_items': [
-                                {'uri' : "http://data.perseus.org/texts/urn:cts:greekLit:tlg0020.tlg001.perseus-eng1",
+                                {'uri' : "http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg001.perseus-eng1",
                                  'ctype' : 'link',
                                  'label' : 'Read in Perseus'
                                 }
@@ -112,7 +112,7 @@ Perseids = {
                         { 
                              'label': "Hesiod, <i>Works and Days</i>",
                              'display_items': [
-                                {'uri' : "http://data.perseus.org/texts/urn:cts:greekLit:tlg0020.tlg002.perseus-eng1",
+                                {'uri' : "http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0020.tlg002.perseus-eng1",
                                  'ctype' : 'link',
                                  'label' : 'Read in Perseus'
                                 }
@@ -178,7 +178,7 @@ Perseids = {
                         { 
                              'label': "Homeric Hymns, <i>Homeric Hymn to Apollo</i>",
                              'display_items': [
-                                {'uri' : "http://data.perseus.org/texts/urn:cts:greekLit:tlg0013.tlg003.perseus-eng1",
+                                {'uri' : "http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0013.tlg003.perseus-eng1",
                                  'ctype' : 'link',
                                  'label' : 'Read in Perseus'
                                 }
@@ -187,12 +187,12 @@ Perseids = {
                              'group': 1
                          },
                          {
-                             'label': "Ovid, <i>Metamorphoses</i> 1.253-1.415",
+                             'label': "Ovid, <i>Metamorphoses</i> 1.452-1.567",
                              'annotation_targets': 
-                                ['http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006:1.253-1.415',
-                                 'http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.333-1.533'],
+                                ['http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006:1.452-1.567',
+                                 'http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.452-1.525'],
                              'display_items': [
-                                {'uri' :  "urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.253-1.348",
+                                {'uri' :  "urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.452-1.525",
                                  'ctype': "cts-text"}
                               ],
                              'level': 1,

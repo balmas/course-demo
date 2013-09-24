@@ -124,7 +124,7 @@ Perseids = {
                              'label': "Ovid, <i>Metamorphoses</i> 1.253-1.415",
                              'annotation_targets': 
                                 ['http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006:1.253-1.415',
-                                 'http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.253-1.415'],
+                                 'http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.253-1.348'],
                              'display_items': [
                                 {'uri' :  "urn:cts:latinLit:phi0959.phi006.perseus-eng1:1.253-1.348",
                                  'ctype': "cts-text"}
@@ -202,7 +202,7 @@ Perseids = {
                              'label': "Krater, <i>Malibu 85.AE.101",
                              'annotation_targets': ["http://data.perseus.org/artifacts/vase/Malibu+85.AE.101"],
                              'display_items': [
-                                {'uri' : "http://data.perseus.org/artifacts/vase/Malibu+85.AE.101",
+                                {'uri' : "https://sosol.perseids.org/artifactproxy/vase/Malibu+85.AE.101",
                                  'ctype' : 'artifact'
                                 }
                               ],
@@ -226,13 +226,74 @@ Perseids = {
                 },
                 {  'id': 'week5',
                     'label': 'Week 5 Sept. 30-Oct. 2: Dionysus',
-                    'status': 'pending',
+                    'status': 'published',
                     'lectures': [ 
                        { 'label': "Lecture 1",
                          'description': ["Dionysus"]
                        }
                     ],
                     'assignments': [
+                       { 
+                             'label': "Chapter 13",
+                             'display_items': [],
+                             'level': 0,
+                             'group': 1
+                        },
+                        { 
+                             'label': "Euripides, <i>Bacchae</i>",
+                             'display_items': [
+                                {'uri' : "http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg017.perseus-eng1",
+                                 'ctype' : 'link',
+                                 'label' : 'Read in Perseus'}
+                              ],
+                             'level': 0,
+                             'group': 1
+                        },
+                         {
+                             'label': "Homeric Hymns, <i> Hymn 7 to Dionysus </i>",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0013.tlg007',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0013.tlg007.perseus-eng1'],
+                             'display_items': [
+                                {'uri' :  "urn:cts:greekLit:tlg0013.tlg007.perseus-eng1:1-32",
+                                 'ctype': "cts-text"}
+                              ],
+                             'level': 1,
+                             'group': 2
+                         },
+                         {
+                             'label': "Aristophanes, <i>Frogs</i> ",
+                             'annotation_targets': [
+                                "http://data.perseus.org/texts/urn:cts:greekLit:tlg0019.tlg009",
+                                "http://data.perseus.org/texts/urn:cts:greekLit:tlg0019.tlg009.perseus-eng1"],
+                             'display_items': [
+                                {'uri' : "urn:cts:greekLit:tlg0019.tlg009.perseus-eng1:1-1528",
+                                 'ctype' : 'cts-text'
+                                }
+                              ],
+                             'level': 2,
+                             'group': 2
+                         },
+                          {
+                             'label': "Images of Dionysus: Berlin F 2290, Boston 00.499, Malibu 87.AE.22",
+                             'annotation_targets': [
+                                "http://data.perseus.org/artifacts/vase/Berlin+F+2290",
+                                "http://data.perseus.org/artifacts/vase/Boston+00.499",
+                                "http://data.perseus.org/artifacts/vase/Malibu+87.AE.22"],
+                             'display_items': [
+                                {'uri' : "https://sosol.perseids.org/artifactproxy/vase/Berlin+F+2290",
+                                 'ctype' : 'artifact'
+                                },
+                                 {'uri' : "https://sosol.perseids.org/artifactproxy/vase/Boston+00.499",
+                                 'ctype' : 'artifact'
+                                },
+                                 {'uri' : "https://sosol.perseids.org/artifactproxy/vase/Malibu+87.AE.22",
+                                 'ctype' : 'artifact'
+                                }
+                              ],
+                             'level': 3,
+                             'group': 2
+                         }
                     ]
                 },
                 {  'id': 'week6',

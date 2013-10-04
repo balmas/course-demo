@@ -298,10 +298,55 @@ Perseids = {
                 },
                 {  'id': 'week6',
                     'label': 'Week 6 Oct. 7-9: Athena and Ares',
-                    'status': 'pending',
+                    'status': 'published',
                     'lectures': [ 
+                         { 'label': "Lecture 1",
+                         'description': ["Athena and Ares"]
+                       }
                     ],
                     'assignments': [
+                        { 
+                             'label': "Chapter 8",
+                             'display_items': [],
+                             'level': 0,
+                             'group': 1
+                        },
+                         {
+                             'label': "Homer, <i> Iliad </i> 5.700-end",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001:5.700-5.899',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001.perseus-eng1:5.668-5.899'],
+                             'display_items': [
+                                {'uri' :  "urn:cts:greekLit:tlg0012.tlg001.perseus-eng1:5.668-5.899",
+                                 'ctype': "cts-text"}
+                              ],
+                             'level': 1,
+                             'group': 2
+                         },
+                         {
+                             'label': "Homer, <i> Odyssey </i> 8.266-8.366",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg002:8.266-8.366',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg002.perseus-eng1:8.343-8.385'],
+                             'display_items': [
+                                {'uri' :  "urn:cts:greekLit:tlg0012.tlg002.perseus-eng1:8.343-8.385",
+                                 'ctype': "cts-text"}
+                              ],
+                             'level': 2,
+                             'group': 2
+                         },
+                          {
+                             'label': "Apollodorus, <i>Library</i> 3.14.6",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0548.tlg001:3.14.6',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0548.tlg001.perseus-eng1:3.14.6'],
+                             'display_items': [
+                                {'uri' :  "urn:cts:greekLit:tlg0548.tlg001.perseus-eng1:3.14.6",
+                                 'ctype': "cts-text"}
+                              ],
+                             'level': 3,
+                             'group': 2
+                         }
                     ]
                 },
                  {  'id': 'week7',

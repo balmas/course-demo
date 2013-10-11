@@ -199,7 +199,7 @@ Perseids = {
                              'group': 2
                          },
                          {
-                             'label': "Krater, <i>Malibu 85.AE.101",
+                             'label': "Krater, <i>Malibu 85.AE.101</i>",
                              'annotation_targets': ["http://data.perseus.org/artifacts/vase/Malibu+85.AE.101"],
                              'display_items': [
                                 {'uri' : "https://sosol.perseids.org/artifactproxy/vase/Malibu+85.AE.101",
@@ -351,10 +351,60 @@ Perseids = {
                 },
                  {  'id': 'week7',
                     'label': 'Week 7 Oct. 14-16: Journeys of the Hero',
-                    'status': 'pending',
-                    'lectures': [ 
+                    'status': 'published',
+                    'lectures': [ { 'label': "Lecture 1",
+                         'description': ["Heroic Myths"]
+                       },
+                       { 'label': "Lecture 2",
+                         'description': ["What is a Hero?"]
+                       },
+                       { 'label': "Lecture 3",
+                         'description': ["Heracles, Perseus, Theseus"]
+                       }
                     ],
                     'assignments': [
+                     { 
+                             'label': "Chapters 21, 22, 23",
+                             'display_items': [],
+                             'level': 0,
+                             'group': 1
+                        },
+                         {
+                             'label': "<i>Malibu 77.AE.11</i>",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/artifacts/vase/Malibu+77.AE.11'],
+                             'display_items': [
+                                    {'uri' : "https://sosol.perseids.org/artifactproxy/vase/Malibu+77.AE.11",
+                                     'ctype' : 'artifact'
+                                    }                              ],
+                             'level': 1,
+                             'group': 2
+                         },
+                         {   'label': "Euripides, <i>Alcestis</i>",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:urn:cts:greekLit:tlg0006.tlg002',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:urn:cts:greekLit:tlg0006.tlg002.perseus-eng1'],
+                             'display_items': [
+                               {'uri' : "http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0006.tlg002.perseus-eng1",
+                                 'ctype' : 'link',
+                                 'label' : 'Read in Perseus'
+                                }
+                              ],
+                             'level': 2,
+                             'group': 2
+                         },
+                          {
+                             'label': "Pindar, <i> Pythian </i> 10",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:greekLit:tlg0033.tlg002:10',
+                                 'http://data.perseus.org/citations/urn:cts:greekLit:tlg0033.tlg002.perseus-eng1:10'],
+                             'display_items': [
+                                {'uri' :  "urn:cts:greekLit:tlg0033.tlg002.perseus-eng1:10",
+                                 'ctype': "cts-text"}
+                              ],
+                             'level': 3,
+                             'group': 2
+                         }
                     ]
                 },
                  {  'id': 'week8',

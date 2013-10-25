@@ -473,10 +473,68 @@ Perseids = {
                 },
                  {  'id': 'week9',
                     'label': 'Week 9 Oct. 28-30: Pastoral divinities',
-                    'status': 'pending',
-                    'lectures': [ 
+                    'status': 'published',
+                    'lectures': [ { 'label': "Lecture 1",
+                         'description': ["Pastoral divinities: Hermes, Pan, the Nymphs"]
+                       },
                     ],
                     'assignments': [
+                        { 
+                             'label': "Homeric Hymns, <i>Homeric Hymn 4 to Hermes</i>",
+                             'display_items': [
+                                {'uri' : "http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0013.tlg004.perseus-eng1",
+                                 'ctype' : 'link',
+                                 'label' : 'Read in Perseus'
+                                }
+                              ],
+                             'level': 0,
+                             'group': 1
+                         },
+                         { 
+                             'label': "Chapter 13",
+                             'display_items': [],
+                             'level': 0,
+                             'group': 1
+                         },
+                         {
+                             'label': "Ovid, <i>Metamorphoses</i> 3.339-510",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006:3.339-3.510',
+                                 'http://data.perseus.org/citations/urn:cts:latinLit:phi0959.phi006.perseus-eng1:3.337-3.509'],
+                             'display_items': [
+                                {'uri' :  "urn:cts:latinLit:phi0959.phi006.perseus-eng1:3.337-3.509",
+                                 'ctype': "cts-text"}
+                              ],
+                             'level': 1,
+                             'group': 2
+                         },
+                         {    
+                             'label': "Apollonius Rhodius, <i> Argonautica </i> 1207-1272",
+                             'annotation_targets': [ "http://data.perseus.org/citations/urn:cts:greekLit:tlg0001.tlg001:1.1207-1.272",
+                                                     "http://data.perseus.org/texts/urn:cts:greekLit:tlg0001.tlg001.opp-eng1"],
+                             'display_items': [
+                                {'uri' : "http://www.archive.org/stream/theargonauticaof00apoliala#page/45/mode/1up",
+                                 'ctype' : "link",
+                                 'label' : "Read in Internet Archive"
+                                }
+                              ],
+                             'level': 2,
+                             'group': 2
+                         },
+                         {
+                             'label': "Theocritus, <i> Idyll </i> 12",
+                             'annotation_targets': 
+                                ['http://data.perseus.org/texts/urn:cts:greekLit:tlg0005.tlg001',
+                                 'http://data.perseus.org/texts/urn:cts:greekLit:tlg0005.tlg001.opp-eng1'],
+                             'display_items': [
+                                { 'uri': "http://books.google.com/books?id=IMrCpKxmgCUC&pg=PA151#v=onepage&q&f=false",
+                                  'ctype': 'link',
+                                  'label' : 'Read in Google Books'
+                                }
+                             ],
+                             'level': 3,
+                             'group': 2
+                         }
                     ]
                 },
                 {  'id': 'week10',
